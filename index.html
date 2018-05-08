@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>
+			Modal
+		</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+
+		<link rel="stylesheet" href="style.css">
+		
+		<style>
+			body,html{
+				padding:0;
+				margin:0;
+				font-family: "Barrio", serif;
+				
+			}
+			#btn{
+				text-decoration: none;
+				color: black;
+				padding:10px;
+				border:1px solid #CCD3D9;
+				border-radius: 2px;
+				background-color: #CCD3D9;
+			}
+			#btn:hover{
+				border:1px solid #999999;
+			}
+			.trigger{
+				padding:20px;
+			}
+			.modal-title{
+				display:flex;
+				justify-content: space-between;
+				align-items: center;
+				border-bottom:1px solid #CCD3D9;
+				padding:3px 20px;
+				background-color: #E95280;
+			}
+			.modal-title > a {
+				color:black;
+			}
+
+			.modal-body{
+				background-color: white;
+				display:flex;
+				justify-content: space-between;
+				align-items: center;
+				border-bottom:1px solid #CCD3D9;
+				padding:20px;
+			}
+			.modal-footer{
+				display:flex;
+				justify-content: flex-end;
+				align-items: center;
+				border-bottom:1px solid #CCD3D9;
+				padding:5px 8px;
+				background-color: #fafafa;
+			}
+			.modal-footer > a:nth-child(1){
+				color:white;
+				text-decoration: none;
+				margin:0 10px;
+			}
+			.modal-footer > a:nth-child(1) > p{
+				padding: 15px;
+				background-color: #283149;
+				border-radius: 4px;	
+			}
+			.modal-footer > a:nth-child(2){
+				color:white;
+				text-decoration: none;
+				margin:0 10px;
+			}
+			.modal-footer > a:nth-child(2) > p{
+				padding: 15px;
+				background-color: #23B1A5;
+				border-radius: 4px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Trigger/Open The Modal -->
+		<div class="trigger">
+			<a href="#" id="btn">Launch Modal</a>
+		</div>
+	
+
+		  <!-- Modal content -->
+		  <div class="content">
+		  	<div class="box" >
+			  	<div class="modal-title">
+			  		<h3 class="head"><b>Modal Title</b></h3>
+			    	<a href="#" class="close"><i class="fa fa-close"></i></a>	
+			  	</div>
+
+			  	<div class="modal-body">
+			  		<p class="head">Modal body text goes here...</p>
+			  	</div>
+
+			  	<div class="modal-footer">
+			  		<a href="#" class="close"><p>Close</p></a>
+			  		<a href="#" class="savechanges"><p>Save changes</p></a>
+			  	</div>
+		  	</div>
+		  </div>
+		
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
